@@ -1,0 +1,9 @@
+@import 'reset.css';
+@import "content.css";
+@import "responsive.css";
+@import "index.css";
+
+/* @font-face {
+    font-family: "Halvar Mittelshcrift"; /* Имя шрифта */
+    src: url(../font/HalvarMittel-Rg.ttf); /* Путь к файлу со шрифтом */
+   } */

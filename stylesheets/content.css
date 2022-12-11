@@ -1,0 +1,132 @@
+body {
+  font-family: "Soyuz Grotesk";
+  background: #F2CE6E;
+  /* width: 1440px; */
+
+    /* F2CE6E */
+}
+.back{
+  animation: anim1 7s infinite linear;
+}
+
+@keyframes anim1 {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-300%);
+  }
+}
+.block-1{
+  position: absolute;
+  top: 600px;
+  margin: 0;
+  padding-left: 100px;
+  animation: rot 3s linear 0s normal none infinite;
+  -webkit-animation: rot 3s linear 0s normal none infinite;
+}
+
+@keyframes rot {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+@-webkit-keyframes rot {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+.kv-1 {
+  float: left;
+  width: 610px;
+  height: 778px;
+  background: #2400FF;
+}
+
+.kv-2 {
+  float: right;
+  width: 827px;
+  height: 778px;
+  background: #F2CE6E;
+}
+
+.kv-3 {
+  float: left;
+  width: 940px;
+  height: 800px;
+  background: #D8403E;
+}
+
+.kv-4{
+  float: right;
+  width: 497px;
+  height: 800px;
+  background: #07B819;
+}
+
+.kv-5{
+  float: left;
+  width: 722px;
+  height: 790px;
+  background: #7DC8FF;
+}
+
+.kv-6{
+  float: right;
+  width: 715px;
+  height: 790px;
+  background: #FD97B7;
+}
+
+.futer{
+  float: right;
+  width: 1440px;
+  height: 427px;
+  background: #F2CE6E;
+}
+
+.futer > img:nth-child(1) {
+  margin-left: 372px;
+  margin-top: 86px;
+  /* animation: rotate-1 2s infinite ease-in-out alternate; */
+}
+.futer > img:nth-child(2) {
+  margin-left: 540px;
+  margin-top: 245px;
+  /* animation: rotate-1 2s infinite ease-in-out alternate; */
+}
+.futer > img:nth-child(3) {
+  margin-left: 850px;
+  margin-top: 265px;
+  /* animation: rotate-1 2s infinite ease-in-out alternate; */
+}
+.f-logo{
+  width: 360px;
+  height: 146px;
+  background-image: url("f-logo.png");
+  animation: logo-animation 2.3s steps(5) infinite;
+}
+@keyframes logo-animation {
+  from {background-position: 0px;}
+  to {background-position: -1849px;}
+}
+
+
+/*
+.walk {
+  animation: walk .4s steps(1) infinite;
+}
+
+@keyframes walk {
+  0% {background-position: 0px top;}
+  25% {background-position: -68px top;}
+  50% {background-position: -136px top;}
+  75% {background-position: -204px top;}
+} */
