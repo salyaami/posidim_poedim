@@ -1,27 +1,20 @@
-/* html {
-  background: #F2CE6E;
-  display: block;
-  height: 100%;
-  font-family: Helvetica;
-}
-
-section {
-  width: 100vw;
-  overflow: hidden;
-} */
-
-@media only screen and (min-width: 1440px) and (max-width: 1919px) {
-
 html {overflow-x: hidden;}
 
 body {
   width: 1440px;
   margin: 0 auto;
   background: #F2CE6E;
-  height: 2768px;
   font-family: Helvetica;
 }
 
+.fon {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  opacity: 50%;
+  width: 1440px;
+  height: 5668px;
+}
 .section01 {
   display: flex;
   width: 100vw;
@@ -95,14 +88,110 @@ body {
   }
 }
 
-/* .block-1{
-  position: absolute;
-  top: 600px;
-  margin: 0;
-  padding-left: 100px;
-  animation: rot 3s linear 0s normal none infinite;
-  -webkit-animation: rot 3s linear 0s normal none infinite;
-} */
+@keyframes rot {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+@-webkit-keyframes rot {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+.section01 .block-1 p:nth-child(2){
+  margin-top: 1850px;
+  color: #D8403E;
+  margin-left: -1028px;
+  float: left;
+  transition: all 0.5s ease;
+  animation: perv 20s infinite linear ;
+}
+.section01 .block-1 p:nth-child(3){
+  margin-top: 1850px;
+  color: #D8403E;
+  margin-left: 50px;
+  float: left;
+  transition: all 0.5s ease;
+  animation: perv 20s infinite linear ;
+}
+
+@keyframes perv {
+  0% {
+      transform: translateX(0vw);
+  }
+  100% {
+      transform: translateX(7200px);
+  }
+}
+
+.section01 .block-2 p:nth-child(2){
+  margin-top: 1850px;
+  color: #FFFFFF;
+  margin-left: -2468px;
+  float: left;
+  animation: perv 20s linear infinite;
+}
+.section01 .block-2 p:nth-child(3){
+  margin-top: 1850px;
+  color: #FFFFFF;
+  margin-left: 50px;
+  float: left;
+  animation: perv 20s linear infinite;
+}
+
+.section01 .block-3 p:nth-child(2){
+  margin-top: 1850px;
+  color: #F2CE6E;
+  margin-left: -3908px;
+  float: left;
+  animation: perv 20s linear infinite;
+}
+.section01 .block-3 p:nth-child(3){
+  margin-top: 1850px;
+  color: #F2CE6E;
+  margin-left: 50px;
+  float: left;
+  animation: perv 20s linear infinite;
+}
+
+
+
+
+.section01 .block-4 p:nth-child(2){
+  margin-top: 1850px;
+  margin-left: ;
+  color: #7DC8FF;
+  margin-left: -5348px;
+  float: left;
+  animation: perv 20s linear infinite;
+}
+.section01 .block-4 p:nth-child(3){
+  margin-top: 1850px;
+  margin-left: auto;
+  color: #7DC8FF;
+  margin-left: 50px;
+  float: left;
+  animation: perv 20s linear infinite;
+}
+
+
+
+@keyframes anim1 {
+  0% {
+      transform: translateX(0vw);
+  }
+  100% {
+      transform: translateX(-400vw);
+  }
+}
 
 @keyframes rot {
 0% {
@@ -123,11 +212,13 @@ body {
 }
 
 .kv-1 {
-  float: left;
-  width: 610px;
-  height: 778px;
+  position: relative;
+  top: -10px;
+  width: 42vw;
+  height: 655px;
   background: #2400FF;
   padding-top: 130px;
+  font-size: 202px;
 }
 
 .kv-1 p:nth-child(1):hover, .kv-1 p:nth-child(9):hover{
@@ -142,7 +233,6 @@ body {
   animation: ch-color-2 2s linear infinite;
 }
 
-
 .kv-1 p:nth-child(5):hover, .kv-1 p:nth-child(8):hover {
   animation: ch-color-4 3s linear infinite;
 }
@@ -150,9 +240,10 @@ body {
 
 
 .kv-1 p:nth-child(1) {
-  margin-left: 20px;
+  position: absolute;
+  top: 83px;
+  left: 62px;
   color: #FDD08C;
-  font-size: 202px;
 }
 
 /* для желтых */
@@ -207,90 +298,86 @@ body {
 }
 
 .kv-1 p:nth-child(2) {
-  margin-left: 215px;
-  margin-top: -320px;
+  left: 311px;
+  position: absolute;
+  top: 81px;
   color: #7DC8FF;
-  font-size: 202px;
   transform: rotate(-54.61deg);
-  /* animation: ch-color-2 1s linear infinite; */
 }
 
 .kv-1 p:nth-child(3) {
-  margin-left: 454px;
-  margin-top: -90px;
-  font-size: 202px;
+  left: 454px;
+  top: 84px;
+  position: absolute;
   color: #FD97B7;
-  /* animation: ch-color-3 10s linear infinite; */
 }
 
 .kv-1 p:nth-child(4) {
-  margin-left: 20px;
-  margin-top: 73px;
-  font-size: 202px;
+  position: absolute;
+  left: 62px;
+  top: 306px;
   color: #7DC8FF;
-  /* animation: ch-color-3 10s linear infinite; */
 }
 
 .kv-1 p:nth-child(5) {
-  margin-left: -124px;
-  margin-top: 101px;
-  font-size: 202px;
+  position: absolute;
+  left: 203px;
+  top: 318px;
   color: #C72222;
   transform: rotate(90deg);
-  /* animation: ch-color-3 3s linear infinite; */
 }
 
 .kv-1 p:nth-child(6) {
-  margin-left: 320px;
-  margin-top: -510px;
-  font-size: 202px;
+  left: 327px;
+  top: 315px;
+  position: absolute;
   color: #7DC8FF;
-  /* animation: ch-color-3 2s linear infinite; */
 }
 
 .kv-1 p:nth-child(7) {
-  margin-left: 20px;
-  margin-top: 75px;
-  font-size: 202px;
+  left: 62px;
+  position: absolute;
+  top: 546px;
   color: #FD97B7;
-  /* animation: ch-color-3 2s linear infinite; */
 }
 
 .kv-1 p:nth-child(8) {
-  margin-left: -125px;
-  margin-top: 80px;
-  font-size: 202px;
+  position: absolute;
+  top: 532px;
+  left: 170px;
   color: #C72222;
   transform: rotate(90deg);
-  /* animation: ch-color-3 2s linear infinite; */
 }
 
 .kv-1 p:nth-child(9) {
-  margin-left: 320px;
-  margin-top: -481px;
-  font-size: 202px;
+  left: 312px;
+  position: absolute;
+  top: 546px;
   color: #F2CE6E;
-  /* animation: ch-color-3 10s linear infinite; */
 }
 
 .imge {
-  margin-left: 500px;
-  margin-top: -185px;
+  left: 450px;
+  position: absolute;
+  top: 568px;
   width: 75px;
   height: 144px;
 }
 
 /* БЛОК 2 */
 .kv-2 {
-  float: right;
-  width: 827px;
-  height: 778px;
+  width: 58vw;
+  left: 42vw;
+  top: -795px;
+  height: 784px;
   background: #F2CE6E;
+  position: relative;
 }
 
 .kv-2 img:nth-child(1) {
-  margin-left: 10px;
-  margin-top: 44px;
+  position: absolute;
+  left: 10px;
+  top: 44px;
   z-index: 2;
   transition: transform .5s;
   animation: bounce1 2s linear infinite;
@@ -325,10 +412,10 @@ body {
 }
 
 .kv-2 img:nth-child(2) {
-  margin-right: 466px;
+  right: 393px;
+  position: absolute;
   transition: transform .5s;
-  margin-top: -264px;
-  float: right;
+  top: 23px;
   animation: bounce2 3s linear infinite;
 }
 
@@ -342,10 +429,10 @@ body {
 }
 
 .kv-2 img:nth-child(3) {
-  margin-left: 264px;
-  margin-top: -165px;
+  left: 293px;
+  top: 128px;
+  position: absolute;
   transition: transform .3s;
-  float: left;
   animation: bounce3 2.5s linear infinite;
 }
 
@@ -359,10 +446,10 @@ body {
 }
 
 .kv-2 img:nth-child(4) {
-  margin-left: 539px;
-  margin-top: -300px;
+  left: 539px;
+  top: 16px;
+  position: absolute;
   transition: transform .2s;
-  float: left;
   animation: bounce4 4s linear infinite;
 }
 
@@ -378,24 +465,24 @@ body {
 }
 
 .kv-2 img:nth-child(5) {
-  margin-left: 9px;
-  margin-top: 15px;
-  float: left;
+  position: absolute;
+  left: 16px;
+  top: 336px;
   animation: bounce1 3s linear infinite;
 }
 
 .kv-2 img:nth-child(6) {
-  margin-left: 210px;
-  margin-top: -24px;
+  position: absolute;
+  left: 378px;
+  top: 325px;
   transform: rotate(-5deg);
-  float: left;
   animation: bounce3 2s linear infinite;
 }
 
 .kv-2 img:nth-child(7) {
-  margin-right: 106px;
-  margin-top: 58px;
-  float: right;
+  position: absolute;
+  right: 10px;
+  top: 302px;
   animation: bounce5 3s linear infinite;
 }
 
@@ -409,9 +496,9 @@ body {
 }
 
 .kv-2 img:nth-child(8) {
-  margin-left: -490px;
-  margin-top: 352px;
-  float: left;
+  position: absolute;
+  left: 39px;
+  top: 551px;
   animation: bounce6 3s linear infinite;
 
 }
@@ -425,27 +512,26 @@ body {
     transform: translate(0px, 0px)}
 }
 .kv-2 img:nth-child(9) {
-  margin-left: 61px;
-  margin-top: 51px;
-  float: left;
+  position: absolute;
+  left: 255px;
+  top: 371px;
   animation: bounce6 4s linear infinite;
 
 }
 
 .kv-2 img:nth-child(10) {
-  margin-left: -18px;
-  margin-top: 245px;
-  float: left;
+  position: absolute;
+  left: 492px;
+  top: 569px;
   transform: rotate(15deg);
   animation: bounce4 4s linear infinite;
 }
 
 .kv-2 img:nth-child(11) {
-  margin-right: 23px;
-  margin-top: -345px;
-  float: right;
+  right: 23px;
+  position: absolute;
+  top: 457px;
   animation: bounce7 3s linear infinite;
-
 }
 
 @keyframes bounce7 {
@@ -458,25 +544,26 @@ body {
 }
 
 .kv-2 img:nth-child(12){
-  margin-right: 8px;
-  margin-top: -331px;
-  float: right;
+  position: absolute;
+  right: 56px;
+  top: 390px;
   animation: bounce2 2.5s linear infinite;
 }
 
 /* БЛОК 3 */
 .kv-3 {
-  float: left;
-  width: 940px;
+  position: relative;
+  top: -794px;
+  width: 66vw;
   height: 800px;
   background: #D8403E;
   overflow: hidden;
 }
 
 .kv-3 img:nth-child(1) {
-  margin-left: 9px;
-  margin-top: 12px;
-  float: left;
+  position: absolute;
+  left: 9px;
+  top: 12px;
   animation: scale1 3s ease infinite;
 }
 
@@ -541,137 +628,142 @@ body {
 }
 
 .kv-3 img:nth-child(2) {
-  margin-left: -127px;
-  margin-top: 111px;
-  float: left;
+  position: absolute;
+  left: 17px;
+  top: 143px;
   animation: scale1 3s ease infinite;
 }
 
 .kv-3 img:nth-child(3) {
-  margin-left: -67px;
-  margin-top: 66px;
-  float: left;
+  position: absolute;
+  left: 356px;
+  top: 66px;
   animation: scale2 3s ease infinite;
 }
 
 .kv-3 img:nth-child(4) {
-  margin-right: 48px;
-  margin-top: -268px;
-  float: right;
+  position: absolute;
+  right: 27px;
+  top: 8px;
   animation: scale3 3s ease infinite;
 }
 
 .kv-3 img:nth-child(5) {
-  margin-left: -194px;
-  margin-top: -8px;
-  float: left;
+  position: absolute;
+  left: 223px;
+  top: 224px;
   animation: scale5 3s ease infinite;
 }
 
 .kv-3 img:nth-child(6) {
-  margin-left: 143px;
-  margin-top: 4px;
+  position: absolute;
+  left: 494px;
+  top: 337px;
   animation: scale1 2s ease infinite;
 }
 
 .kv-3 img:nth-child(7) {
-  margin-left: 90px;
-  margin-top: -191px;
-  float: right;
+  position: absolute;
+  left: 763px;
+  top: 315px;
   animation: scale4 3s ease infinite;
 }
 
 .kv-3 img:nth-child(8) {
-  margin-left: 9px;
-  margin-top: -13px;
+  position: absolute;
+  left: 42px;
+  top: 452px;
   animation: scale5 4s ease infinite;
 }
 
 .kv-3 img:nth-child(9) {
-  margin-left: 605px;
-  margin-top: -496px;
-  float: left;
+  position: absolute;
+  left: 556px;
+  top: 346px;
   animation: scale2 3s ease infinite;
 }
 
 /* БЛОК 4 */
 .kv-4{
-  float: left;
-  width: 500px;
+  position: relative;
+  top: -1594px;
+  left: 66vw;
+  width: 35vw;
   height: 800px;
   background: #07B819;
+  font-size: 202px;
 }
 
 .kv-4 p:nth-child(1) {
-  margin-left: 10px;
-  margin-right: 20px;
+  position: absolute;
+  left: 24px;
+  top: 40px;
   color: #FFF;
-  font-size: 202px;
   float: left;
 }
 
 
 .kv-4 p:nth-child(2) {
-  margin-left: -8px;
-  margin-top: -1px;
+  position: absolute;
+  left: 136px;
+  top: 34px;
   color: #FEC708;
-  font-size: 202px;
-  transform: rotate(75deg);
+  transform: rotate(55deg);
   float: left;
 }
 
 .kv-4 p:nth-child(3) {
-  margin-left: 275px;
-  margin-top: -201px;
-  font-size: 202px;
+  position: absolute;
+  left: 252px;
+  top: 40px;
   color: #FFF;
   float: left;
 }
 
 .kv-4 p:nth-child(4) {
-  margin-left: 371px;
-  margin-top: -206px;
-  font-size: 202px;
+  position: absolute;
+  left: 344px;
+  top: 40px;
   color: #D8403E;
   float: left;
 }
 
 .kv-4 p:nth-child(5) {
-  margin-left: 17px;
-  margin-top: -18px;
-  font-size: 202px;
+  position: absolute;
+  left: 17px;
+  top: 220px;
   color: #C72222;
   float: left;
 }
 
 .kv-4 p:nth-child(6) {
-  margin-left: 9px;
-  margin-top: -16px;
-  font-size: 202px;
+  position: absolute;
+  left: 117px;
+  top: 220px;
   color: #2400FF;
   float: left;
 }
 
 .kv-4 p:nth-child(7) {
-  margin-right: 7px;
-  margin-top: -16px;
-  font-size: 202px;
+  position: absolute;
+  right: 13px;
+  top: 220px;
   color: #FFF;
   float: right;
 }
 
 .kv-4 p:nth-child(8) {
-  margin-left: 27px;
-  margin-top: 12px;
-  font-size: 202px;
+  position: absolute;
+  left: 14px;
+  top: 408px;
   color: #7DC8FF;
   float: left;
 }
 
 .kv-4 p:nth-child(9) {
-  margin-left: 270px;
-  margin-top: -200px;
-  font-size: 202px;
+  position: absolute;
+  left: 250px;
+  top: 408px;
   color: #FFF;
   animation: ch-color-3 10s forwards;
   float: left;
@@ -679,26 +771,26 @@ body {
 
 
 .kv-4 p:nth-child(10) {
-  margin-left: 27px;
-  margin-top: -5px;
-  font-size: 202px;
+  position: absolute;
+  left: 14px;
+  top: 602px;
   color: #FD97B7;
   float: left;
 }
 
 
 .kv-4 p:nth-child(11) {
-  margin-left: 15px;
-  margin-top: -5px;
-  font-size: 202px;
+  position: absolute;
+  left: 128px;
+  top: 602px;
   color: #FFF;
   float: left;
 }
 
 .kv-4 p:nth-child(12) {
-  margin-left: 299px;
-  margin-top: -203px;
-  font-size: 202px;
+  position: absolute;
+  left: 244px;
+  top: 602px;
   color: #FEC708;
   float: left;
 }
@@ -730,9 +822,9 @@ body {
 }
 
 .imge1{
-  margin-right: 8px;
-  margin-top: -373px;
-  float: right;
+  position: absolute;
+  right: 8px;
+  top: 373px;
 }
 
 .kv-4 p:nth-child(1):hover, .kv-4 p:nth-child(2):hover, .kv-4 p:nth-child(3):hover,
@@ -745,139 +837,116 @@ body {
 
 
 .kv-5{
-  float: left;
-  width: 725px;
-  height: 790px;
+  position: relative;
+  top: -1593px;
+  width: 50vw;
+  height: 784px;
   background: #7DC8FF;
-
+  font-size: 202px;
 }
 .kv-5 p:nth-child(1) {
-  margin-left: 20px;
-  margin-top: 60px;
-  font-size: 202px;
+  position: absolute;
+  left: 45px;
+  top: 74px;
   color: #2400FF;
-  float: left;
   transition: 1s;
 }
 .kv-5 p:nth-child(2) {
-  margin-left: 40px;
-  margin-top: 60px;
-  font-size: 202px;
+  position: absolute;
+  left: 230px;
+  top: 74px;
   color: #FF6F0E;
-  float: left;
   transition: 1s;
-
 }
 
 .kv-5 p:nth-child(3) {
-  margin-left: 40px;
-  margin-top: 60px;
-  font-size: 202px;
+  position: absolute;
+  left: 397px;
+  top: 74px;
   color: #FFFFFF;
-  float: left;
   transition: 1s;
-
 }
 
 .kv-5 p:nth-child(4) {
-  margin-left: 40px;
-  margin-top: 60px;
-  font-size: 202px;
+  position: absolute;
+  left: 543px;
+  top: 74px;
   color: #FD97B7;
-  float: left;
   transition: 1s;
-
 }
 
 .kv-5 p:nth-child(5) {
-  margin-left: 20px;
-  margin-top: 15px;
-  font-size: 202px;
+  position: absolute;
+  left: 45px;
+  top: 274px;
   color: #FD97B7;
-  float: left;
   transition: 1s;
-
 }
 
 .kv-5 p:nth-child(6) {
-  margin-left: 40px;
-  margin-top: 15px;
-  font-size: 202px;
+  position: absolute;
+  left: 206px;
+  top: 274px;
   color: #FDD08C;
-  float: left;
   transition: 1s;
-
 }
 
 .kv-5 p:nth-child(7) {
-  margin-left: 40px;
-  margin-top: 10px;
-  font-size: 202px;
+  position: absolute;
+  left: 382px;
+  top: 274px;
   color: #07B819;
-  float: left;
   transition: 1s;
-
 }
 .kv-5 p:nth-child(8) {
-  margin-left: 40px;
-  margin-top: 10px;
-  font-size: 202px;
+  position: absolute;
+  left: 557px;
+  top: 274px;
   color: #FFF;
-  float: left;
   transition: 1s;
-
 }
 .kv-5 p:nth-child(9) {
-  margin-left: -629px;
-  margin-top: 236px;
-  font-size: 202px;
+  position: absolute;
+  left: 45px;
+  top: 464px;
   color: #FFF;
-  float: left;
   transition: 1s;
-
 }
 .kv-5 p:nth-child(10) {
-  margin-left: -484px;
-  margin-top: 236px;
-  font-size: 202px;
+  position: absolute;
+  left: 164px;
+  top: 464px;
   color: #FF6F0E;
-  float: left;
   transition: 1s;
-
 }
 .kv-5 p:nth-child(11) {
-  margin-left: -340px;
-  margin-top: 236px;
-  font-size: 202px;
+  position: absolute;
+  left: 299px;
+  top: 464px;
   color: #07B819;
-  float: left;
   transition: 1s;
-
 }
 .kv-5 p:nth-child(12) {
-  margin-left: -200px;
-  margin-top: 236px;
-  font-size: 202px;
+  position: absolute;
+  left: 435px;
+  top: 464px;
   color: #FD97B7;
-  float: left;
   transition: 1s;
-
 }
 .kv-5 p:nth-child(13) {
-  margin-left: -68px;
-  margin-top: 236px;
-  font-size: 202px;
+  position: absolute;
+  left: 577px;
+  top: 464px;
   color: #2400FF;
-  float: left;
   transition: 1s;
-
 }
 
 .imge2{
+  position: absolute;
   width: 357px;
   height: 90px;
-  margin-left: 184px;
-  margin-top: -17px;
+  left: 207px;
+  top: 597px;
   float: left;
   transition: 1s;
 }
@@ -900,6 +969,17 @@ body {
   }
 }
 
+
+.kv-6 {
+  position: relative;
+  top: -2377px;
+  left: 717px;
+  width: 51vw;
+  height: 784px;
+  background: #FD97B7;
+  overflow: hidden;
+}
+
 .kv-6 img:nth-child(1):hover, .kv-6 img:nth-child(2):hover, .kv-6 img:nth-child(3):hover,
 .kv-6 img:nth-child(4):hover, .kv-6 img:nth-child(5):hover, .kv-6 img:nth-child(6):hover,
 .kv-6 img:nth-child(7):hover, .kv-6 img:nth-child(8):hover, .kv-6 img:nth-child(9):hover,
@@ -908,99 +988,93 @@ body {
   animation-play-state: paused;
 }
 
-.kv-6 {
-  float: right;
-  width: 715px;
-  height: 790px;
-  background: #FD97B7;
-  overflow: hidden;
-}
 
 .kv-6 img:nth-child(1) {
-  margin-left: 210px;
-  margin-top: -358px;
-  float: left;
+  position: absolute;
+  left: 210px;
+  top: -358px;
   animation: fall 5s ease-in-out infinite;
 }
 .kv-6 img:nth-child(2) {
-  margin-left: 46px;
-  margin-top: -283px;
-  float: left;
+  position: absolute;
+  left: 46px;
+  top: -283px;
   animation: fall 15s linear infinite;
 }
 .kv-6 img:nth-child(3) {
-  margin-left: 209px;
-  margin-top: -114px;
-  float: left;
+  position: absolute;
+  left: 209px;
+  top: -114px;
   transform: rotate(-15deg);
   animation: fall 8s ease-in-out infinite;
 }
 .kv-6 img:nth-child(4) {
-  margin-right: 187px;
-  margin-top: -369px;
-  float: right;
+  position: absolute;
+  right: 187px;
+  top: -369px;
   animation: fall 10s linear infinite;
 }
 .kv-6 img:nth-child(5) {
-  margin-right: 158px;
-  margin-top: -326px;
-  float: right;
+  position: absolute;
+  right: 158px;
+  top: -326px;
   animation: fall 4s linear infinite;
 }
 .kv-6 img:nth-child(6) {
-  margin-left: 342px;
-  margin-top: -118px;
-  float: left;
+  position: absolute;
+  left: 342px;
+  top: -118px;
   animation: fall 12s linear infinite;
 }
 .kv-6 img:nth-child(7) {
-  margin-left: 19px;
-  margin-top: -256px;
-  float: left;
+  position: absolute;
+  left: 19px;
+  top: -256px;
   animation: fall 7s linear infinite;
 }
 .kv-6 img:nth-child(8) {
-  margin-left: 32px;
-  margin-top: -507px;
-  float: left;
+  position: absolute;
+  left: 32px;
+  top: -277px;
   animation: fall 9s ease-in-out infinite;
 }
 .kv-6 img:nth-child(9) {
-  margin-right: 29px;
-  margin-top: -254px;
-  float: right;
+  position: absolute;
+  right: 29px;
+  top: -254px;
   animation: fall 12s linear infinite;
 
 }
 .kv-6 img:nth-child(10) {
-  margin-left: 221px;
-  margin-top: -533px;
-  float: left;
+  position: absolute;
+  left: 221px;
+  top: -233px;
   transform: rotate(5deg);
   animation: fall 5s ease-in-out infinite;
 }
 .kv-6 img:nth-child(11) {
-  margin-left: 106px;
-  margin-top: -451px;
-  float: left;
+  position: absolute;
+  left: 106px;
+  top: -351px;
   animation: fall 10s linear infinite;
 }
 .kv-6 img:nth-child(12) {
-  margin-left: -265px;
-  margin-top: -421px;
-  float: left;
+  position: absolute;
+  left: 166px;
+  top: -177px;
   animation: fall 8s ease-in-out infinite;
 }
 .kv-6 img:nth-child(13) {
-  margin-right: -2px;
-  margin-top: -378px;
-  float: right;
+  position: absolute;
+  right: -2px;
+  top: -378px;
   animation: fall 7s linear infinite;
 }
 
 .kv-7 {
-  float: left;
-  width: 890px;
+  position: relative;
+  top: -2377px;
+  width: 61vw;
   height: 790px;
   background: #2400FF;
 }
@@ -1043,41 +1117,41 @@ body {
 }
 
 .kv-7 img:nth-child(1) {
-  margin-left: 39px;
-  margin-top: 59px;
-  float: left;
+  position: absolute;
+  left: 39px;
+  top: 18px;
   animation: zooms 3s ease-in-out infinite;
 }
 .kv-7 img:nth-child(2) {
-  margin-left: 105px;
-  margin-top: 58px;
-  float: left;
+  position: absolute;
+  left: 538px;
+  top: 38px;
   animation: zooms1 3s ease-in-out infinite;
 }
 .kv-7 img:nth-child(3) {
-  margin-left: -735px;
-  margin-top: 269px;
-  float: left;
+  position: absolute;
+  left: 63px;
+  top: 198px;
   transform: rotate(25deg);
   animation: zooms2 3s ease-in-out infinite;
 }
 .kv-7 img:nth-child(4) {
-  margin-right: 25px;
-  margin-top: 9px;
-  float: right;
+  position: absolute;
+  right: 64px;
+  top: 262px;
   transform: rotate(-15deg);
   animation: zooms3 3s linear infinite;
 }
 .kv-7 img:nth-child(5) {
-  margin-right: 137px;
-  margin-top: 243px;
-  float: right;
+  position: absolute;
+  right: 480px;
+  top: 521px;
   animation: wiggle 3s linear infinite;
 }
 .kv-7 img:nth-child(6) {
-  margin-left: 468px;
-  margin-top: -234px;
-  float: left;
+  position: absolute;
+  left: 406px;
+  top: 535px;
   animation: zooms2 3s ease-in-out infinite;
 }
 
@@ -1087,10 +1161,13 @@ body {
 } */
 
 .kv-8 {
-  float: left;
-  width: 550px;
+  position: relative;
+  top: -3168px;
+  left: 877px;
+  width: 39vw;
   height: 790px;
   background: #F85B2E;
+  font-size: 202px;
 }
 
 /* для желтых */
@@ -1165,98 +1242,94 @@ animation: ch7 .7s linear infinite;
 }
 
 .kv-8 p:nth-child(1) {
-  margin-left: 20px;
-  margin-top: 72px;
-  font-size: 202px;
+  position: absolute;
+  left: 20px;
+  top: 85px;
   color: #7DC8FF;
   float: left;
   animation: ch-color3 2s linear infinite;
 }
 .kv-8 p:nth-child(2) {
-  margin-left: 15px;
-  margin-top: 72px;
-  font-size: 202px;
+  position: absolute;
+  left: 152px;
+  top: 80px;
   color: #FFF;
   float: left;
+  transform: rotate(-44.93deg);
   animation: ch-color4 2s linear infinite;
-
 }
 .kv-8 p:nth-child(3) {
-  margin-left: 15px;
-  margin-top: 72px;
-  font-size: 202px;
+  position: absolute;
+  left: 285px;
+  top: 85px;
   color: #FEC708;
   float: left;
   animation: ch-color1 2s linear infinite;
-
 }
 .kv-8 p:nth-child(4) {
-  margin-right: 7px;
-  margin-top: 72px;
-  font-size: 202px;
+  position: absolute;
+  right: 28px;
+  top: 85px;
   color: #FFF;
   float: right;
   animation: ch-color5 2s linear infinite;
-
 }
 .kv-8 p:nth-child(5) {
-  margin-left: 20px;
-  margin-top: 16px;
-  font-size: 202px;
+  position: absolute;
+  left: 26px;
+  top: 327px;
   color: #FFF;
   float: left;
   animation: ch-color4 2s linear infinite;
-
 }
 .kv-8 p:nth-child(6) {
-  margin-left: 15px;
-  margin-top: 16px;
-  font-size: 202px;
+  position: absolute;
+  left: 169px;
+  top: 325px;
   color: #FEC708;
   float: left;
+  transform: rotate(46.46deg);
   animation: ch-color1 2s linear infinite;
-
 }
 
 .kv-8 p:nth-child(7) {
-  margin-left: 15px;
-  margin-top: 16px;
-  font-size: 202px;
+  position: absolute;
+  left: 292px;
+  top: 325px;
   color: #FD97B7;
   float: left;
+  transform: rotate(-15.59deg);
   animation: ch-color2 2s linear infinite;
-
 }
 .kv-8 p:nth-child(8) {
-  margin-left: -378px;
-  margin-top: 240px;
-  font-size: 202px;
+  position: absolute;
+  left: 20px;
+  top: 564px;
   color: #FFF;
   float: left;
   animation: ch-color5 2s linear infinite;
-
 }
 .kv-8 p:nth-child(9) {
-  margin-left: 143px;
-  margin-top: 22px;
-  font-size: 202px;
+  position: absolute;
+  left: 174px;
+  top: 564px;
   color: #2400FF;
   float: left;
   animation: ch-color2 2s linear infinite;
-
 }
 .kv-8 p:nth-child(10) {
-  margin-left: 15px;
-  margin-top: 20px;
-  font-size: 202px;
+  position: absolute;
+  left: 332px;
+  top: 564px;
   color: #7DC8FF;
   float: left;
+  transform: rotate(24.18deg);
   animation: ch-color3 2s linear infinite;
-
 }
 .kv-8 img {
-  margin-right: 0px;
-  margin-top: -244px;
+  position: absolute;
+  right: -16px;
+  top: 225px;
   width: 147px;
   height: 422px;
   float: right;
@@ -1264,40 +1337,39 @@ animation: ch7 .7s linear infinite;
 
 /* ФУТЕР */
 .footer{
-  float: right;
+  position: relative;
+  top: -3168px;
   width: 1440px;
   height: 427px;
   background: #F2CE6E;
+  font-size: 78px;
 }
 
 .footer img:nth-child(1) {
-  margin-left: 0px;
-  margin-top: -829px;
+  position: absolute;
+  left: 0px;
+  top: -915px;
   float: left;
 }
 .footer img:nth-child(2) {
-  margin-left: -248px;
-  margin-top: 15px;
-  float: left;
-  /* animation: rotate-1 2s infinite ease-in-out alternate; */
+  position: absolute;
+  left: 364px;
+  top: 21px;
 }
 .footer img:nth-child(3) {
-  margin-left: -158px;
-  margin-top: 270px;
-  float: left;
-  /* animation: rotate-1 2s infinite ease-in-out alternate; */
+  position: absolute;
+  left: 300px;
+  top: 233px;
 }
 .footer img:nth-child(4) {
-  margin-left: 29px;
-  margin-top: 165px;
-  float: left;
-  /* animation: rotate-1 2s infinite ease-in-out alternate; */
+  position: absolute;
+  left: 604px;
+  top: 111px;
 }
 .footer img:nth-child(5) {
-  margin-left: 29px;
-  margin-top: 243px;
-  float: left;
-  /* animation: rotate-1 2s infinite ease-in-out alternate; */
+  position: absolute;
+  left: 884px;
+  top: 185px;
 }
 
 @keyframes scale6 {
@@ -1417,289 +1489,233 @@ animation: ch7 .7s linear infinite;
 
 
 .bukvimya p:nth-child(1) {
-  margin-left: -305px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 641px;
+  top: 37px;
   color: #07B819;
-  float: left;
   animation: ch7 .7s linear infinite;
 }
 .bukvimya p:nth-child(2) {
-  margin-left: -249px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 698px;
+  top: 37px;
   color: #FD97B7;
-  float: left;
   animation: ch2 .7s linear infinite;
 }
 .bukvimya p:nth-child(3) {
-  margin-left: -204px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 742px;
+  top: 37px;
   color: #FF6F0E;
-  float: left;
   animation: ch6 .7s linear infinite;
 }
 .bukvimya p:nth-child(4) {
-  margin-left: -158px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 788px;
+  top: 37px;
   color: #7DC8FF;
-  float: left;
   animation: ch3 .7s linear infinite;
 }
 .bukvimya p:nth-child(5) {
-  margin-left: -111px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 835px;
+  top: 37px;
   color: #FFF;
-  float: left;
   animation: ch4 .7s linear infinite;
 }
 .bukvimya p:nth-child(6) {
-  margin-left: -64px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 882px;
+  top: 37px;
   color: #2400FF;
-  float: left;
   animation: ch5 .7s linear infinite;
 }
 
 /* А */
 .bukvimya p:nth-child(7) {
-  margin-left: 18px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 948px;
+  top: 37px;
   color: #7DC8FF;
-  float: left;
   animation: ch3 .7s linear infinite;
 }
 .bukvimya p:nth-child(8) {
-  margin-left: 5px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 1003px;
+  top: 37px;
   color: #FFF;
-  float: left;
   animation: ch4 .7s linear infinite;
 }
 .bukvimya p:nth-child(9) {
-  margin-left: 0px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 1049px;
+  top: 37px;
   color: #07B819;
-  float: left;
   animation: ch7 .7s linear infinite;
 }
 .bukvimya p:nth-child(10) {
-  margin-left: 0px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 1093px;
+  top: 37px;
   color: #2400FF;
-  float: left;
   animation: ch5 .7s linear infinite;
 }
 /* c */
 .bukvimya p:nth-child(11) {
-  margin-left: 0px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 1138px;
+  top: 37px;
   color: #FFF;
-  float: left;
   animation: ch4 .7s linear infinite;
 }
 .bukvimya p:nth-child(12) {
-  margin-left: 0px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 1184px;
+  top: 37px;
   color: #FF6F0E;
-  float: left;
   animation: ch6 .7s linear infinite;
 }
 /* н */
 .bukvimya p:nth-child(13) {
-  margin-left: 0px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 1228px;
+  top: 37px;
   color: #7DC8FF;
-  float: left;
   animation: ch3 .7s linear infinite;
 }
 .bukvimya p:nth-child(14) {
-  margin-left: 0px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 1274px;
+  top: 37px;
   color: #FD97B7;
-  float: left;
   animation: ch2 .7s linear infinite;
 }
 /* р */
 .bukvimya p:nth-child(15) {
-  margin-left: 0px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  left: 1323px;
+  top: 37px;
   color: #C72222;
-  float: left;
   animation: ch1 .7s linear infinite;
 }
 .bukvimya p:nth-child(16) {
-  margin-right: 26px;
-  margin-top: 78px;
-  font-size: 78px;
+  position: absolute;
+  right: 24px;
+  top: 37px;
   color: #2400FF;
-  float: right;
   animation: ch5 .7s linear infinite;
 }
 
 .bukviart p:nth-child(1){
-  margin-left: -933px;
-  margin-top: 407px;
-  font-size: 78px;
+  position: absolute;
+  left: 462px;
+  top: 311px;
   color: #2400FF;
-  float: left;
 }
 .bukviart p:nth-child(2){
-  margin-left: -877px;
-  margin-top: 408px;
-  font-size: 78px;
+  position: absolute;
+  left: 516px;
+  top: 311px;
   color: #FF6F0E;
-  float: left;
 }
 .bukviart p:nth-child(3){
-  margin-left: -831px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 563px;
+  top: 311px;
   color: #07B819;
-  float: left;
 }
 /* - */
 
 .bukviart p:nth-child(4){
-  margin-left: -790px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 601px;
+  top: 311px;
   color: #FFF;
-  float: left;
 }
 .bukviart p:nth-child(5){
-  margin-left: -758px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 633px;
+  top: 311px;
   color: #FF6F0E;
-  float: left;
 }
 .bukviart p:nth-child(6){
-  margin-left: -712px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 679px;
+  top: 311px;
   color: #D8403E;
-  float: left;
 }
 .bukviart p:nth-child(7){
-  margin-left: -664px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 727px;
+  top: 311px;
   color: #FFF;
-  float: left;
 }
 /* к */
 .bukviart p:nth-child(8){
-  margin-left: -619px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 771px;
+  top: 311px;
   color: #2400FF;
-  float: left;
 }
 .bukviart p:nth-child(9){
-  margin-left: -571px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 816px;
+  top: 311px;
   color: #FFF;
-  float: left;
 }
 .bukviart p:nth-child(10){
-  margin-left: -529px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 856px;
+  top: 311px;
   color: #FD97B7;
-  float: left;
 }
 .bukviart p:nth-child(11){
-  margin-left: -483px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 903px;
+  top: 311px;
   color: #07B819;
-  float: left;
 }
 .bukviart p:nth-child(12){
-  margin-left: -437px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 946px;
+  top: 311px;
   color: #FF6F0E;
-  float: left;
 }
 
 /* Б22ДЗ08 */
 .bukvibd p:nth-child(1) {
-  margin-left: -300px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 1074px;
+  top: 311px;
   color: #2400FF;
-  float: left;
   animation: ch5 .7s linear infinite;
 }
 .bukvibd p:nth-child(2) {
-  margin-left: -245px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 1129px;
+  top: 311px;
   color: #FF6F0E;
-  float: left;
   animation: ch6 .7s linear infinite;
 }
 .bukvibd p:nth-child(3) {
-  margin-left: -155px;
-  margin-top: 406px;
-  font-size: 78px;
+  position: absolute;
+  left: 1215px;
+  top: 311px;
   color: #7DC8FF;
-  float: left;
   animation: ch3 .7s linear infinite;
 }
 .bukvibd p:nth-child(4) {
-  margin-right: 26px;
-  margin-top: 246px;
-  font-size: 78px;
+  position: absolute;
+  right: 26px;
+  top: 311px;
   color: #D8403E;
-  float: right;
   animation: ch1 .7s linear infinite;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* .logo{
-  width: 360px;
-  height: 146px;
-  margin-top: -150px;
-  margin-left: 200px;
-  display: block;
-  float: left;
-  background-image: url("f-logo.png");
-  animation: logo 3s steps(5) infinite;
+.footer img:nth-child(6) {
+  position: absolute;
+  right: 26px;
+  top: 100px;
 }
-
-@keyframes logo {
-  0% {background-position: 0px top;}
-  20% {background-position: -360px top;}
-  40% {background-position: -720px top;}
-  60% {background-position: -1080px top;}
-  80% {background-position: -1440px top;}
-} */
 
 /*
 .walk {
