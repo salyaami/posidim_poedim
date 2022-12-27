@@ -1,3 +1,6 @@
 @import 'reset.css';
 @import "content.css";
-@import "responsive.css"
+@import "responsive.css";
+@import "1024-728.css";
+@import "767-414.css";
+@import "320-413.css";

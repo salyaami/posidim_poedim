@@ -1288,6 +1288,7 @@ animation: ch7 .7s linear infinite;
   transform: rotate(-15.59deg);
   animation: ch-color2 2s linear infinite;
 }
+
 .kv-8 p:nth-child(8) {
   position: absolute;
   left: 20px;
