@@ -8,69 +8,69 @@
   }
 
   .section01{
-    height: 60vh;
+    height: 65vh;
   }
 
   .kv-1 {
     position: relative;
     width: 100vw;
-    height: 8%;
-    top: 0px;
+    height: 5%;
+    top: 0;
     font-size: 20vw;
   }
 
   .kv-1 p:nth-child(1) {
     position: absolute;
-    top: 9%;
+    top: 8%;
     left: 20%;
   }
 
   .kv-1 p:nth-child(2) {
-    left: 47%;
+    left: 49%;
     position: absolute;
-    top: 9%;
+    top: 8%;
   }
 
   .kv-1 p:nth-child(3) {
-    left: 63%;
-    top: 9%;
+    left: 67%;
+    top: 8%;
     position: absolute;
   }
 
   .kv-1 p:nth-child(4) {
     position: absolute;
     left: 20%;
-    top: 30%;
+    top: 38%;
   }
 
   .kv-1 p:nth-child(5) {
     position: absolute;
-    left: 35%;
-    top: 30%;
+    left: 38%;
+    top: 38%;
   }
 
   .kv-1 p:nth-child(6) {
-    left: 50%;
-    top: 30%;
+    left: 54%;
+    top: 38%;
     position: absolute;
   }
 
   .kv-1 p:nth-child(7) {
     left: 20%;
     position: absolute;
-    top: 54%;
+    top: 68%;
   }
 
   .kv-1 p:nth-child(8) {
     position: absolute;
-    top: 54%;
-    left: 34%;
+    top: 68%;
+    left: 36%;
   }
 
   .kv-1 p:nth-child(9) {
-    left: 50%;
+    left: 54%;
     position: absolute;
-    top: 54%;
+    top: 68%;
   }
 
   .imge {
@@ -86,7 +86,7 @@
     width: 100vw;
     left: 0;
     top: 0;
-    height: 11%;
+    height: 11.5%;
     background: #F2CE6E;
     position: relative;
   }
@@ -178,9 +178,9 @@
   /* БЛОК 3 */
   .kv-3 {
     position: relative;
-    top: -0;
+    top: 294px;
     width: 100vw;
-    height: 8%;
+    height: 10.8%;
     overflow: hidden;
   }
 
@@ -310,10 +310,10 @@
   /* БЛОК 4 */
   .kv-4{
     position: relative;
-    top: 0;
+    top: -379px;
     left: 0;
     width: 100vw;
-    height: 14%;
+    height: 8.5%;
     font-size: 20vw;
   }
 
@@ -461,9 +461,9 @@
 
   .kv-5{
     position: relative;
-    top: 0;
+    top: -3px;
     width: 100vw;
-    height: 8%;
+    height: 8.5%;
     font-size: 20vw;
   }
   .kv-5 p:nth-child(1) {
@@ -592,7 +592,7 @@
 
   .kv-6 {
     position: relative;
-    top: 0;
+    top: -3px;
     left: 0;
     width: 100vw;
     height: 11%;
@@ -691,9 +691,9 @@
 
   .kv-7 {
     position: relative;
-    top: 0px;
+    top: 275px;
     width: 100vw;
-    height: 8%;
+    height: 11.5%;
   }
 
 
@@ -774,10 +774,10 @@
 
   .kv-8 {
     position: relative;
-    top: 0;
+    top: -404px;
     left: 0;
     width: 100vw;
-    height: 11%;
+    height: 8%;
     font-size: 20vw;
   }
 
