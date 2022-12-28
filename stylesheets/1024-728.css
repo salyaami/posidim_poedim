@@ -74,6 +74,7 @@
       top: 70%;
       width: 75px;
       height: 144px;
+      opacity: 0;
     }
 
     /* БЛОК 2 */
@@ -385,6 +386,7 @@
       left: 77%;
       height: 2%;
       top: 40%;
+      opacity: 0;
     }
 
     .kv-4 p:nth-child(1):hover, .kv-4 p:nth-child(2):hover, .kv-4 p:nth-child(3):hover,
@@ -504,7 +506,7 @@
       height: 90px;
       left: 20%;
       top: 82%;
-      transition: 1s;
+      opacity: 0;
     }
 
     .kv-5 p:nth-child(1):hover, .kv-5 p:nth-child(2):hover, .kv-5 p:nth-child(3):hover,
@@ -629,7 +631,6 @@
       height: 17%;
       font-size: 14vw;
     }
-
 
     @keyframes zooms{
       0% {
@@ -874,7 +875,16 @@
       position: absolute;
       right: 0;
       top: 28%;
-      width: 147px;
-      height: 422px;
+      width: 23%;
     }
+
+    .footer{
+      position: relative;
+      top: -2124px;
+      width: 100vw;
+      height: 11%;
+      font-size: 5vw;
+    }
+
+
 }

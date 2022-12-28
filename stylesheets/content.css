@@ -2,6 +2,7 @@ html {overflow-x: hidden;}
 
 body {
   width: 1440px;
+  height: 4475px;
   margin: 0 auto;
   background: #F2CE6E;
   font-family: Helvetica;
@@ -20,7 +21,32 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
 
+.section01 p:nth-child(1) {
+  position: absolute;
+  color: #D8403E;
+  width: 200px;
+  top: 10px;
+  font-size: 78px;
+  z-index: 2;
+}
+
+  &:after {
+    padding-left: 20px;
+    content: "0%";
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 20px;
+    mix-blend-mode: difference;
+    animation: anim1 16s infinite linear;
+  }
+
+.section01 p:nth-child(1):after {
+    /* This value is the OPPOSITE color of our background */
+    color: rgb(0, 255, 255);
+    mix-blend-mode: difference;
 }
 
 .section01 .back {
@@ -75,7 +101,7 @@ body {
   }
 }
 
-@keyframes rot {
+@keyframes rot{
 0% {
   transform: rotate(0deg);
 }
@@ -93,23 +119,6 @@ body {
 }
 }
 
-.section01 .block-1 p:nth-child(2){
-  margin-top: 1850px;
-  color: #D8403E;
-  margin-left: -1028px;
-  float: left;
-  transition: all 0.5s ease;
-  animation: perv 20s infinite linear ;
-}
-.section01 .block-1 p:nth-child(3){
-  margin-top: 1850px;
-  color: #D8403E;
-  margin-left: 50px;
-  float: left;
-  transition: all 0.5s ease;
-  animation: perv 20s infinite linear ;
-}
-
 @keyframes perv {
   0% {
       transform: translateX(0vw);
@@ -118,58 +127,6 @@ body {
       transform: translateX(7200px);
   }
 }
-
-.section01 .block-2 p:nth-child(2){
-  margin-top: 1850px;
-  color: #FFFFFF;
-  margin-left: -2468px;
-  float: left;
-  animation: perv 20s linear infinite;
-}
-.section01 .block-2 p:nth-child(3){
-  margin-top: 1850px;
-  color: #FFFFFF;
-  margin-left: 50px;
-  float: left;
-  animation: perv 20s linear infinite;
-}
-
-.section01 .block-3 p:nth-child(2){
-  margin-top: 1850px;
-  color: #F2CE6E;
-  margin-left: -3908px;
-  float: left;
-  animation: perv 20s linear infinite;
-}
-.section01 .block-3 p:nth-child(3){
-  margin-top: 1850px;
-  color: #F2CE6E;
-  margin-left: 50px;
-  float: left;
-  animation: perv 20s linear infinite;
-}
-
-
-
-
-.section01 .block-4 p:nth-child(2){
-  margin-top: 1850px;
-  margin-left: ;
-  color: #7DC8FF;
-  margin-left: -5348px;
-  float: left;
-  animation: perv 20s linear infinite;
-}
-.section01 .block-4 p:nth-child(3){
-  margin-top: 1850px;
-  margin-left: auto;
-  color: #7DC8FF;
-  margin-left: 50px;
-  float: left;
-  animation: perv 20s linear infinite;
-}
-
-
 
 @keyframes anim1 {
   0% {
@@ -686,7 +643,6 @@ body {
   left: 24px;
   top: 40px;
   color: #FFF;
-  float: left;
 }
 
 
@@ -696,7 +652,6 @@ body {
   top: 34px;
   color: #FEC708;
   transform: rotate(55deg);
-  float: left;
 }
 
 .kv-4 p:nth-child(3) {
@@ -704,7 +659,6 @@ body {
   left: 252px;
   top: 40px;
   color: #FFF;
-  float: left;
 }
 
 .kv-4 p:nth-child(4) {
@@ -712,7 +666,6 @@ body {
   left: 344px;
   top: 40px;
   color: #D8403E;
-  float: left;
 }
 
 .kv-4 p:nth-child(5) {
@@ -720,7 +673,6 @@ body {
   left: 17px;
   top: 220px;
   color: #C72222;
-  float: left;
 }
 
 .kv-4 p:nth-child(6) {
@@ -728,7 +680,6 @@ body {
   left: 117px;
   top: 220px;
   color: #2400FF;
-  float: left;
 }
 
 .kv-4 p:nth-child(7) {
@@ -736,7 +687,6 @@ body {
   right: 13px;
   top: 220px;
   color: #FFF;
-  float: right;
 }
 
 .kv-4 p:nth-child(8) {
@@ -744,7 +694,6 @@ body {
   left: 14px;
   top: 408px;
   color: #7DC8FF;
-  float: left;
 }
 
 .kv-4 p:nth-child(9) {
@@ -753,7 +702,6 @@ body {
   top: 408px;
   color: #FFF;
   animation: ch-color-3 10s forwards;
-  float: left;
 }
 
 
@@ -762,7 +710,6 @@ body {
   left: 14px;
   top: 602px;
   color: #FD97B7;
-  float: left;
 }
 
 
@@ -771,7 +718,6 @@ body {
   left: 128px;
   top: 602px;
   color: #FFF;
-  float: left;
 }
 
 .kv-4 p:nth-child(12) {
@@ -779,7 +725,6 @@ body {
   left: 244px;
   top: 602px;
   color: #FEC708;
-  float: left;
 }
 
 
@@ -810,7 +755,7 @@ body {
 
 .imge1{
   position: absolute;
-  right: 8px;
+  left: 1330px;
   top: 373px;
 }
 
@@ -934,7 +879,6 @@ body {
   height: 90px;
   left: 207px;
   top: 597px;
-  float: left;
   transition: 1s;
 }
 
@@ -1151,8 +1095,7 @@ body {
   position: relative;
   top: -3168px;
   left: 61vw;
-  width: 39vw;
-  height: 790px;
+  width: 23%;
   background: #F85B2E;
   font-size: 202px;
 }
@@ -1233,7 +1176,6 @@ animation: ch7 .7s linear infinite;
   left: 20px;
   top: 85px;
   color: #7DC8FF;
-  float: left;
   animation: ch-color3 2s linear infinite;
 }
 .kv-8 p:nth-child(2) {
@@ -1241,7 +1183,6 @@ animation: ch7 .7s linear infinite;
   left: 152px;
   top: 80px;
   color: #FFF;
-  float: left;
   transform: rotate(-44.93deg);
   animation: ch-color4 2s linear infinite;
 }
@@ -1250,7 +1191,6 @@ animation: ch7 .7s linear infinite;
   left: 285px;
   top: 85px;
   color: #FEC708;
-  float: left;
   animation: ch-color1 2s linear infinite;
 }
 .kv-8 p:nth-child(4) {
@@ -1258,7 +1198,6 @@ animation: ch7 .7s linear infinite;
   right: 28px;
   top: 85px;
   color: #FFF;
-  float: right;
   animation: ch-color5 2s linear infinite;
 }
 .kv-8 p:nth-child(5) {
@@ -1266,7 +1205,6 @@ animation: ch7 .7s linear infinite;
   left: 26px;
   top: 327px;
   color: #FFF;
-  float: left;
   animation: ch-color4 2s linear infinite;
 }
 .kv-8 p:nth-child(6) {
@@ -1274,7 +1212,6 @@ animation: ch7 .7s linear infinite;
   left: 169px;
   top: 325px;
   color: #FEC708;
-  float: left;
   transform: rotate(46.46deg);
   animation: ch-color1 2s linear infinite;
 }
@@ -1284,7 +1221,6 @@ animation: ch7 .7s linear infinite;
   left: 292px;
   top: 325px;
   color: #FD97B7;
-  float: left;
   transform: rotate(-15.59deg);
   animation: ch-color2 2s linear infinite;
 }
@@ -1294,7 +1230,6 @@ animation: ch7 .7s linear infinite;
   left: 20px;
   top: 564px;
   color: #FFF;
-  float: left;
   animation: ch-color5 2s linear infinite;
 }
 .kv-8 p:nth-child(9) {
@@ -1302,7 +1237,6 @@ animation: ch7 .7s linear infinite;
   left: 174px;
   top: 564px;
   color: #2400FF;
-  float: left;
   animation: ch-color2 2s linear infinite;
 }
 .kv-8 p:nth-child(10) {
@@ -1310,7 +1244,6 @@ animation: ch7 .7s linear infinite;
   left: 332px;
   top: 564px;
   color: #7DC8FF;
-  float: left;
   transform: rotate(24.18deg);
   animation: ch-color3 2s linear infinite;
 }
@@ -1318,51 +1251,53 @@ animation: ch7 .7s linear infinite;
   position: absolute;
   right: -16px;
   top: 225px;
-  width: 147px;
-  height: 422px;
-  float: right;
+  width: 23%;
 }
-/*
 
 .footer{
   position: relative;
-  top: -3168px;
-  width: 1440px;
-  height: 427px;
+  top: -2878px;
+  width: 100vw;
+  height: 11%;
   background: #F2CE6E;
-  font-size: 78px;
+  font-size: 5vw;
 }
 
 .footer img:nth-child(1) {
   position: absolute;
   left: 0px;
-  top: -915px;
-  float: left;
+  bottom: 0%;
+  width: 23%;
 }
 .footer img:nth-child(2) {
   position: absolute;
-  left: 364px;
-  top: 21px;
+  left: 20%;
+  top: 4%;
+  width: 16%;
 }
 .footer img:nth-child(3) {
   position: absolute;
-  left: 300px;
-  top: 233px;
+  left: 20%;
+  top: 50%;
+  width: 16%;
 }
 .footer img:nth-child(4) {
   position: absolute;
-  left: 604px;
-  top: 111px;
+  left: 40%;
+  top: 30%;
+  width: 16%;
 }
 .footer img:nth-child(5) {
   position: absolute;
-  left: 884px;
-  top: 185px;
+  left: 60%;
+  top: 46%;
+  width: 8%;
 }
 .footer img:nth-child(6) {
   position: absolute;
-  left: 1043px;
-  top: 133px;
+  left: 73%;
+  top: 40%;
+  width: 20%;
 }
 
 @keyframes scale6 {
@@ -1380,3 +1315,327 @@ animation: ch7 .7s linear infinite;
 .footer img:nth-child(5):hover {
   animation: scale6 2s linear infinite;
 }
+
+* для красных*/
+ @keyframes ch1 {
+   from {
+     color: #C72222;
+   }
+   50% {
+     color: #FFF;
+   }
+   to {
+     color: #7DC8FF;
+   }
+ }
+
+ /* для розовых */
+ @keyframes ch2 {
+   from {
+     color: #FD97B7;
+   }
+   50% {
+     color: #7DC8FF;
+   }
+   to {
+     color: #2400FF;
+   }
+ }
+
+ /* для голубых */
+ @keyframes ch3 {
+   from {
+     color: #7DC8FF;
+   }
+   50% {
+     color: #07B819;
+   }
+   to {
+     color: #FFFFFF;
+   }
+ }
+
+ /* для белых */
+ @keyframes ch4 {
+   from {
+     color: #FFF;
+   }
+   50% {
+     color: #FF6F0E;
+   }
+   to {
+     color: #C72222;
+   }
+ }
+
+ /* для синих*/
+ @keyframes ch5 {
+   from {
+     color: #2400FF;
+   }
+   50% {
+     color: #7DC8FF;
+   }
+   to {
+     color: #FF6F0E;
+   }
+ }
+
+ /* для оранжевых*/
+ @keyframes ch6 {
+   from {
+     color: #FF6F0E;
+   }
+   50% {
+     color: #2400FF;
+   }
+   to {
+     color: #C72222;
+   }
+ }
+
+ /* для зеленых */
+ @keyframes ch7 {
+   from {
+     color: #07B819;
+   }
+   50% {
+     color: #FEC708;
+   }
+   to {
+     color: #2400FF;
+   }
+ }
+
+ .bukvimya p:nth-child(1):hover, .bukvimya p:nth-child(2):hover, .bukvimya p:nth-child(3):hover,
+ .bukvimya p:nth-child(4):hover, .bukvimya p:nth-child(5):hover, .bukvimya p:nth-child(6):hover,
+ .bukvimya p:nth-child(7):hover, .bukvimya p:nth-child(8):hover, .bukvimya p:nth-child(9):hover,
+ .bukvimya p:nth-child(10):hover {
+   -webkit-animation-play-state:paused;
+   animation-play-state:paused;
+ }
+
+
+ .bukvimya p:nth-child(1) {
+    position: absolute;
+    left: 44%;
+    top: 10%;
+    color: #07B819;
+    animation: ch7 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(2) {
+   left: 48%;
+   position: absolute;
+   top: 10%;
+   color: #FD97B7;
+   animation: ch2 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(3) {
+   left: 51%;
+   position: absolute;
+   top: 10%;
+   color: #FF6F0E;
+   animation: ch6 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(4) {
+   left: 54%;
+   position: absolute;
+   top: 10%;
+   color: #7DC8FF;
+   animation: ch3 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(5) {
+   left: 57%;
+   position: absolute;
+   top: 10%;
+   color: #FFF;
+   animation: ch4 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(6) {
+   left: 60%;
+   position: absolute;
+   top: 10%;
+   color: #2400FF;
+   animation: ch5 .7s linear infinite;
+ }
+
+ /* А */
+ .bukvimya p:nth-child(7) {
+   left: 66%;
+   position: absolute;
+   top: 10%;
+   color: #7DC8FF;
+   animation: ch3 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(8) {
+   left: 70%;
+   position: absolute;
+   top: 10%;
+   color: #FFF;
+   animation: ch4 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(9) {
+   left: 73%;
+   position: absolute;
+   top: 10%;
+   color: #07B819;
+   animation: ch7 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(10) {
+   left: 76%;
+   position: absolute;
+   top: 10%;
+   color: #2400FF;
+   animation: ch5 .7s linear infinite;
+ }
+ /* c */
+ .bukvimya p:nth-child(11) {
+   left: 79%;
+   position: absolute;
+   top: 10%;
+   color: #FFF;
+   animation: ch4 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(12) {
+   left: 82%;
+   position: absolute;
+   top: 10%;
+   color: #FF6F0E;
+   animation: ch6 .7s linear infinite;
+ }
+ /* н */
+ .bukvimya p:nth-child(13) {
+   left: 85%;
+   position: absolute;
+   top: 10%;
+   color: #7DC8FF;
+   animation: ch3 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(14) {
+   left: 88%;
+   position: absolute;
+   top: 10%;
+   color: #FD97B7;
+   animation: ch2 .7s linear infinite;
+ }
+ /* р */
+ .bukvimya p:nth-child(15) {
+   left: 91.5%;
+   position: absolute;
+   top: 10%;
+   color: #C72222;
+   animation: ch1 .7s linear infinite;
+ }
+ .bukvimya p:nth-child(16) {
+   left: 95%;
+   position: absolute;
+   top: 10%;
+   color: #2400FF;
+   animation: ch5 .7s linear infinite;
+ }
+
+ .bukviart p:nth-child(1){
+   position: absolute;
+   left: 30.2%;
+   top: 80%;
+   color: #2400FF;
+ }
+ .bukviart p:nth-child(2){
+   position: absolute;
+   left: 34%;
+   top: 80%;
+   color: #FF6F0E;
+ }
+ .bukviart p:nth-child(3){
+   position: absolute;
+   left: 37.2%;
+   top: 80%;
+   color: #07B819;
+ }
+ /* - */
+
+ .bukviart p:nth-child(4){
+   position: absolute;
+   left: 40%;
+   top: 80%;
+   color: #FFF;
+ }
+ .bukviart p:nth-child(5){
+   position: absolute;
+   left: 42%;
+   top: 80%;
+   color: #FF6F0E;
+ }
+ .bukviart p:nth-child(6){
+   position: absolute;
+   left: 45%;
+   top: 80%;
+   color: #D8403E;
+ }
+ .bukviart p:nth-child(7){
+   position: absolute;
+   left: 48.2%;
+   top: 80%;
+   color: #FFF;
+ }
+ /* к */
+ .bukviart p:nth-child(8){
+   position: absolute;
+   left: 51.1%;
+   top: 80%;
+   color: #2400FF;
+ }
+ .bukviart p:nth-child(9){
+   position: absolute;
+   left: 54.2%;
+   top: 80%;
+   color: #FFF;
+ }
+ .bukviart p:nth-child(10){
+   position: absolute;
+   left: 57%;
+   top: 80%;
+   color: #FD97B7;
+ }
+ .bukviart p:nth-child(11){
+   position: absolute;
+   left: 60%;
+   top: 80%;
+   color: #07B819;
+ }
+ .bukviart p:nth-child(12){
+   position: absolute;
+   left: 63%;
+   top: 80%;
+   color: #FF6F0E;
+ }
+
+ /* Б22ДЗ08 */
+ .bukvibd p:nth-child(1) {
+   position: absolute;
+   left: 72.5%;
+   top: 80%;
+   color: #2400FF;
+   animation: ch5 .7s linear infinite;
+ }
+ .bukvibd p:nth-child(2) {
+  position: absolute;
+  left: 76.5%;
+  top: 80%;
+  color: #FF6F0E;
+  animation: ch6 .7s linear infinite;
+ }
+ .bukvibd p:nth-child(3) {
+   position: absolute;
+   left: 83%;
+   top: 80%;
+   color: #7DC8FF;
+   animation: ch3 .7s linear infinite;
+ }
+ .bukvibd p:nth-child(4) {
+  position: absolute;
+  left: 91%;
+  top: 80%;
+  color: #D8403E;
+  animation: ch1 .7s linear infinite;
+ }

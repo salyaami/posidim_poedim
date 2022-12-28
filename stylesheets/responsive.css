@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 1440px) and (max-width: 1919px) {
     body, html {
-      height: 5608px;
+      height: 4475px;
       font-size: 202px;
     }
 }
@@ -634,7 +634,7 @@
       width: 357px;
       height: 90px;
       left: 20%;
-      top: 82%;
+      top: 78%;
       transition: 1s;
     }
 
@@ -801,43 +801,42 @@
         transform: scale(1.1);}
     }
 
+
     .kv-7 img:nth-child(1) {
       position: absolute;
-      left: 39px;
-      top: 18px;
-      animation: zooms 3s ease-in-out infinite;
+      left: 5%;
+      top: 3%;
+      width: 40%;
     }
     .kv-7 img:nth-child(2) {
       position: absolute;
-      left: 538px;
-      top: 38px;
-      animation: zooms1 3s ease-in-out infinite;
+      left: 69%;
+      top: 5%;
+      width: 20%;
     }
     .kv-7 img:nth-child(3) {
       position: absolute;
-      left: 63px;
-      top: 198px;
-      transform: rotate(25deg);
-      animation: zooms2 3s ease-in-out infinite;
+      left: 0%;
+      top: 20%;
+      width: 45%;
     }
     .kv-7 img:nth-child(4) {
       position: absolute;
-      right: 64px;
-      top: 262px;
-      transform: rotate(-15deg);
-      animation: zooms3 3s linear infinite;
+      right: 10%;
+      top: 30%;
+      width: 30%;
     }
     .kv-7 img:nth-child(5) {
       position: absolute;
-      right: 480px;
-      top: 521px;
-      animation: wiggle 3s linear infinite;
+      left: 22%;
+      top: 60%;
+      width: 26%;
     }
     .kv-7 img:nth-child(6) {
       position: absolute;
-      left: 406px;
-      top: 535px;
-      animation: zooms2 3s ease-in-out infinite;
+      left: 60%;
+      top: 60%;
+      width: 35%;
     }
 
     .kv-8 {
@@ -1010,13 +1009,4 @@
       position: absolute;
       right: 0;
       top: 28%;
-      width: 147px;
-      height: 422px;
     }
-
-
-
-
-
-@media all and (min-device-width: 0px) and (max-device-width: 319px) {
-}
