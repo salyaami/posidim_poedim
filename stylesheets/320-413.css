@@ -5,7 +5,9 @@
   body, html {
     height: 3488px;
     width: 414px;
+    overflow-x: hidden;
   }
+
 
   .section01{
     height: 65vh;
@@ -864,9 +866,17 @@
   }
   .kv-8 img {
     position: absolute;
-    right: 0;
-    top: 28%;
+    right: 0%;
+    top: 88%;
     width: 147px;
     height: 422px;
   }
+
+  .footer {
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 4%;
+    background: #F2CE6E;
+    font-size: 5vw;
 }
