@@ -5,6 +5,13 @@
       width: 1025px;
     }
 
+    .section01 .block-1 img,
+    .section01 .block-2 img,
+    .section01 .block-3 img,
+    .section01 .block-4 img {
+      width: calc(100vw / 16 * 11);
+    }
+
     .section01 {
       height: 100vh;
     }

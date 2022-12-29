@@ -1,11 +1,50 @@
 /*------------------------------------------------------------767---------------------------------------------------*/
 @media all and (min-width: 415px) and (max-width: 767px) {
+  html {overflow-x: hidden;}
 
-  body {
+  body{
     height: 2935px;
     width: 767px;
-    overflow-x: hidden;
-}
+  }
+
+      .section01 .block-1 img,
+      .section01 .block-2 img,
+      .section01 .block-3 img,
+      .section01 .block-4 img {
+        width: calc(100vw / 16 * 15);
+        margin: auto;
+        animation: rot 3s linear 0s normal none infinite;
+        -webkit-animation: rot 3s linear 0s normal none infinite;
+      }
+
+      .logos img:nth-child(1) {
+      top: 2%;
+      left: 45%;
+      width: 14%;
+      z-index: 2;
+      }
+      .section01 p:nth-child(1) {
+        display: flex;
+        position: absolute;
+        left: 12%;
+        top: 9%;
+        width: 1000px;
+        font-size: 5vw;
+        z-index: 2;
+        color: white;
+        mix-blend-mode: difference;
+      }
+      .section01 p:nth-child(2) {
+        display: flex;
+        position: absolute;
+        left: 26%;
+        top: 92%;
+        width: 1000px;
+        font-size: 5vw;
+        z-index: 2;
+        color: white;
+        mix-blend-mode: difference;
+      }
 
       .kv-1 {
         position: relative;

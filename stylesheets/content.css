@@ -6,7 +6,7 @@ body {
   margin: 0 auto;
   background: #F2CE6E;
   font-family: Helvetica;
-  cursor: url('./images/cursor.svg'), auto;
+  cursor: url('images/cursor.svg'), auto;
 }
 
 .fon {
@@ -19,35 +19,47 @@ body {
 }
 .section01 {
   display: flex;
+  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-.section01 p:nth-child(1) {
-  position: absolute;
-  color: #D8403E;
-  width: 200px;
-  top: 10px;
-  font-size: 5vw;
+.logos img:nth-child(1) {
+  top: 1%;
+  left: 45%;
+  width: 12%;
   z-index: 2;
 }
 
-  &:after {
-    padding-left: 20px;
-    content: "0%";
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    padding: 10px 20px;
-    mix-blend-mode: difference;
-    animation: anim1 16s infinite linear;
-  }
+.section01 p:nth-child(1) {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  top: 11%;
+  width: 1000px;
+  font-size: 4vw;
+  z-index: 2;
+  color: white;
+  mix-blend-mode: difference;
+}
+.section01 p:nth-child(2) {
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 88%;
+  width: 1000px;
+  font-size: 4vw;
+  z-index: 2;
+  color: white;
+  mix-blend-mode: difference;
+}
 
-.section01 p:nth-child(1):after {
-    /* This value is the OPPOSITE color of our background */
-    color: rgb(0, 255, 255);
-    mix-blend-mode: difference;
+.logos img{
+  position: absolute;
+  left: 40%;
+  width: 3
+  z-index: 2;
 }
 
 .section01 .back {
@@ -87,7 +99,7 @@ body {
 .section01 .block-2 img,
 .section01 .block-3 img,
 .section01 .block-4 img {
-  width: calc(100vw / 16 * 7);
+  width: calc(100vw / 16 * 8);
   margin: auto;
   animation: rot 3s linear 0s normal none infinite;
   -webkit-animation: rot 3s linear 0s normal none infinite;

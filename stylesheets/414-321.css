@@ -8,10 +8,48 @@
     overflow-x: hidden;
   }
 
-
   .section01{
     height: 65vh;
   }
+
+  .section01 .block-1 img,
+  .section01 .block-2 img,
+  .section01 .block-3 img,
+  .section01 .block-4 img {
+    position: absolute;
+    top: 14%;
+    width: calc(100vw / 16 * 14);
+  }
+
+  .logos img:nth-child(1) {
+  top: 1%;
+  left: 45%;
+  width: 14%;
+  z-index: 2;
+  }
+  .section01 p:nth-child(1) {
+    display: flex;
+    position: absolute;
+    left: 12%;
+    top: 9%;
+    width: 1000px;
+    font-size: 5vw;
+    z-index: 2;
+    color: white;
+    mix-blend-mode: difference;
+  }
+  .section01 p:nth-child(2) {
+    display: flex;
+    position: absolute;
+    left: 26%;
+    top: 92%;
+    width: 1000px;
+    font-size: 5vw;
+    z-index: 2;
+    color: white;
+    mix-blend-mode: difference;
+  }
+
 
   .kv-1 {
     position: relative;
@@ -181,7 +219,7 @@
   /* БЛОК 3 */
   .kv-3 {
     position: relative;
-    top: 266px;
+    top: 301px;
     width: 100vw;
     height: 10.8%;
     overflow: hidden;
@@ -313,7 +351,7 @@
   /* БЛОК 4 */
   .kv-4{
     position: relative;
-    top: -341px;
+    top: -309px;
     left: 0;
     width: 100vw;
     height: 8.5%;
@@ -448,7 +486,7 @@
 
   .kv-5{
     position: relative;
-    top: -5px;
+    top: 32px;
     width: 100vw;
     height: 8.5%;
     font-size: 20vw;
@@ -546,7 +584,7 @@
 
   .kv-6 {
     position: relative;
-    top: -7px;
+    top: 32px;
     left: 0;
     width: 100vw;
     height: 11%;
@@ -640,7 +678,7 @@
 
   .kv-7 {
     position: relative;
-    top: 245px;
+    top: 285px;
     width: 100vw;
     height: 11.5%;
   }
@@ -721,7 +759,7 @@
 
   .kv-8 {
     position: relative;
-    top: -374px;
+    top: -335px;
     left: 0;
     width: 100vw;
     height: 8%;
@@ -853,16 +891,23 @@
   .kv-8 img {
     position: absolute;
     right: 0%;
-    top: 88%;
-    width: 147px;
-    height: 422px;
+    top: 351px;
+    width: 72px;
+    height: 212px;
   }
 
   .footer {
     position: relative;
-    top: -10px;
+    top: 29px;
     width: 100vw;
-    height: 5%;
+    height: 6%;
     background: #F2CE6E;
     font-size: 5vw;
 }
+
+  .footer img:nth-child(1) {
+      position: absolute;
+      left: 0px;
+      bottom: -10%;
+      width: 23%;
+  }

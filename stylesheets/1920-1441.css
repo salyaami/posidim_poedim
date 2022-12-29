@@ -4,6 +4,30 @@
       width: 1920px;
     }
 
+    .section01 p:nth-child(1) {
+      display: flex;
+      position: absolute;
+      left: 20%;
+      top: 5%;
+      width: 1364px;
+      font-size: 4vw;
+      z-index: 2;
+      color: white;
+      mix-blend-mode: difference;
+    }
+    .section01 p:nth-child(2) {
+      display: flex;
+      position: absolute;
+      left: 30%;
+      top: 88%;
+      width: 1000px;
+      font-size: 4vw;
+      z-index: 2;
+      color: white;
+      mix-blend-mode: difference;
+    }
+
+
     .kv-1 {
       position: relative;
       width: 42vw;
@@ -38,7 +62,7 @@
     .kv-1 p:nth-child(5) {
       position: absolute;
       left: 33%;
-      top: 38%;
+      top: 40%;
     }
 
     .kv-1 p:nth-child(6) {

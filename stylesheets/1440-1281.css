@@ -9,13 +9,21 @@
 
         .section01 {
           height: 100vh;
+          position: relative;
+        }
+
+        .logos img:nth-child(1) {
+          top: 1%;
+          left: 45%;
+          width: 12%;
+          z-index: 2;
         }
 
         .kv-1 {
           position: relative;
           width: 42vw;
           height: 17%;
-          top: 1px;
+          top: 0;
           font-size: 14vw;
         }
         .kv-1 p:nth-child(1) {
@@ -177,7 +185,7 @@
         /* БЛОК 3 */
         .kv-3 {
           position: relative;
-          top: -758px;
+          top: -760px;
           width: 66vw;
           height: 18%;
           background: #D8403E;
@@ -372,7 +380,7 @@
         /* БЛОК 4 */
         .kv-4{
           position: relative;
-          top: -1476px;
+          top: -1480px;
           left: 66vw;
           width: 34vw;
           height: 18%;
@@ -524,7 +532,7 @@
 
         .kv-5{
           position: relative;
-          top: -1477px;
+          top: -1481px;
           width: 49vw;
           height: 18%;
           background: #7DC8FF;
@@ -656,7 +664,7 @@
 
         .kv-6 {
           position: relative;
-          top: -2195px;
+          top: -2201px;
           left: 49vw;
           width: 51vw;
           height: 18%;
@@ -756,7 +764,7 @@
 
         .kv-7 {
           position: relative;
-          top: -2195px;
+          top: -2201px;
           width: 61vw;
           height: 17%;
         }
@@ -800,7 +808,7 @@
 
         .kv-8 {
           position: relative;
-          top: -2873px;
+          top: -2882px;
           left: 61vw;
           width: 39vw;
           height: 17%;
@@ -998,12 +1006,14 @@
         .footer img:nth-child(4) {
           position: absolute;
           left: 40%;
-          top: 30%;
+          top: 28%;
+          width: 14%;
         }
         .footer img:nth-child(5) {
           position: absolute;
           left: 60%;
-          top: 46%;
+          top: 40%;
+          width: 8%;
         }
         .footer img:nth-child(6) {
           position: absolute;

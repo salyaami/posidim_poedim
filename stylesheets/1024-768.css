@@ -3,7 +3,43 @@
 
     body, html {
       height: 2935px;
-      width: 769px;
+      width: 768px;
+    }
+
+    .section01 .block-1 img,
+    .section01 .block-2 img,
+    .section01 .block-3 img,
+    .section01 .block-4 img {
+      width: calc(100vw / 16 * 15);
+    }
+
+    .logos img:nth-child(1) {
+    top: 1%;
+    left: 45%;
+    width: 14%;
+    z-index: 2;
+    }
+    .section01 p:nth-child(1) {
+      display: flex;
+      position: absolute;
+      left: 12%;
+      top: 9%;
+      width: 1000px;
+      font-size: 5vw;
+      z-index: 2;
+      color: white;
+      mix-blend-mode: difference;
+    }
+    .section01 p:nth-child(2) {
+      display: flex;
+      position: absolute;
+      left: 26%;
+      top: 92%;
+      width: 1000px;
+      font-size: 5vw;
+      z-index: 2;
+      color: white;
+      mix-blend-mode: difference;
     }
 
 
@@ -885,5 +921,5 @@
       font-size: 5vw;
     }
 
-
+}
 }
