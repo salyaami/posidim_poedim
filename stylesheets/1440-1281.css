@@ -12,6 +12,18 @@
           position: relative;
         }
 
+        .section01 p:nth-child(1) {
+          display: flex;
+          position: absolute;
+          left: 20%;
+          top: 13%;
+          width: 1000px;
+          font-size: 4vw;
+          z-index: 2;
+          color: white;
+          mix-blend-mode: difference;
+        }
+
         .logos img:nth-child(1) {
           top: 1%;
           left: 45%;
