@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   background: #F2CE6E;
   font-family: Helvetica;
+  cursor: url('./images/cursor.svg'), auto;
 }
 
 .fon {
@@ -1095,7 +1096,8 @@ body {
   position: relative;
   top: -3168px;
   left: 61vw;
-  width: 23%;
+  width: 39vw;
+  height: 790px;
   background: #F85B2E;
   font-size: 202px;
 }
@@ -1252,11 +1254,12 @@ animation: ch7 .7s linear infinite;
   right: -16px;
   top: 225px;
   width: 23%;
+  height: 422px;
 }
 
 .footer{
   position: relative;
-  top: -2878px;
+  top: -3168px;
   width: 100vw;
   height: 11%;
   background: #F2CE6E;
