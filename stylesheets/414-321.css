@@ -10,6 +10,7 @@
 
   .section01{
     height: 65vh;
+    position: relative;
   }
 
   .section01 .block-1 img,

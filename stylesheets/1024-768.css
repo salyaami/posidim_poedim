@@ -6,6 +6,10 @@
       width: 768px;
     }
 
+    .section01 {
+      position: relative;
+    }
+
     .section01 .block-1 img,
     .section01 .block-2 img,
     .section01 .block-3 img,
